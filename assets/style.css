@@ -1,0 +1,277 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;  
+    height: 100%;  
+    font-family: Arial, sans-serif;
+}
+/* navber code  */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+   
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo-img{
+    width: 50px;  
+    height: auto;
+    margin-right: 10px;
+}
+.logo-text{
+    font-size: 1.7rem;
+    color: #333;
+
+ 
+}
+.navbar-ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar-ul li a{
+    text-decoration: none;
+    font-size: 1.2rem; 
+    color: #333; 
+    font-weight: 500;
+   
+    
+}
+
+.navbar a[href="#home"] {
+    color: #f39c12; /* Home Color */
+}
+.navbar a[href="#admission"] {
+    color: #27ae60; /* Admission Color */
+}
+
+.navbar a[href="#facilities"] {
+    color: #2980b9; /* Facilities Color */
+}
+.navbar a[href="#about"] {
+    color: #8e44ad; /* About Color */
+}
+
+.navbar a[href="#contact"] {
+      color: #ffffff; /* Contact Color */
+}
+.contact-link {
+    background-color: #f39c12;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  
+    
+}
+.contact-link:hover {
+    background-color: #e67e22;
+    transform: scale(1.1); 
+}
+
+.hamburger {
+    display: none; 
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger i {
+    font-size: 1.5rem; 
+    color: #333;
+}
+
+/* main section-1 start  */
+.hero {
+    padding: 50px 0; 
+  }
+
+  .hero-text {
+    flex: 1; 
+  }
+
+  .hero-image {
+    flex: 1; 
+    text-align: right
+  }
+  .hero-image img {
+    max-width: 100%; 
+    height: auto;
+  }
+
+  .title1{
+    color:orange ;
+  }
+  .title2{
+    color: rgb(44, 174, 226);
+  }
+    
+.hero-content{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px
+    
+}
+.hero-titel{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.para{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+.hero-btn{
+    padding: 12px 25px;
+    background-color: #1b1b1b;
+    color: #ffffff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.hero-btn:hover{
+    background-color: #010102;
+}
+
+/* seconde section start  */
+
+.section-title {
+    text-align: center; /* ডেস্কটপ এবং মোবাইলের জন্য সেন্টার */
+    margin-bottom: 30px;
+    width: 100%; /**/
+}
+.section-title h2{
+    font-size: 30px;
+    color: #333;
+}
+.section-second{
+    background-image: url("/assets/bg.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex; 
+    align-items: center; 
+   
+    
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px; 
+
+}
+.card {
+    width: 300px; 
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px
+  }
+  .card img {
+      margin-top: 20px;
+  
+  }
+  .card-content {
+    text-align: center;
+      width: 90%;
+  }
+  .card h3 {
+    margin-top: 10px;
+    color: #333;
+    font-weight: 600;
+  }
+
+  .card p {
+    color: #666;
+    font-size: 14px;
+    margin: 10px;
+  }
+  .read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+  }
+.read-more1{
+    color: #2980b9;
+}
+.read-more2{
+    color: orange;
+}
+.read-more3{
+    color:blueviolet
+}
+
+.card1 {
+    background: linear-gradient(180deg, rgba(173, 216, 230,0.3) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.card2 {
+  background: linear-gradient(180deg, rgba(255, 255, 224,0.3) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.card3 {
+  background: linear-gradient(180deg, rgba(221, 160, 221,0.3) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+/* Responsive Styles */
+@media  (max-width: 768px) {
+    header{
+        border-bottom: 1px solid #ddd;
+    }
+    .navbar-ul{
+        display: none;
+        flex-direction: column;
+    }
+    .hamburger {
+        display: block;
+    }
+
+    /* hero part  */
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center; 
+      }
+        .hero-image{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* second section code  */
+        .card-container {
+            flex-direction: column;
+            align-items: center;
+          }
+          .card {
+            width: 90%;
+            margin: 20px 0;
+          }
+}
+
+
+
