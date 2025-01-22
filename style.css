@@ -292,7 +292,7 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 2fr 2fr ;
   gap: 20px;
 }
 
@@ -446,4 +446,58 @@ header {
   text-decoration: none;
   font-size: 16px;
   width: 197px;
+}
+
+
+/* footer section strat  */
+
+.footer {
+  background-color: #00a2e8;
+  color: white; 
+  padding: 40px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.left-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.left-icon h2{
+  font-weight: bold;
+  padding: 5px;
+}
+
+.footer-item1{
+
+  text-align: left;
+
+}
+.footer-item1 p{
+  color: rgb(243, 236, 236);
+
+  
+}
+
+.footer-item ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-item li {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+.social-icons img {
+  width: 30px;
+  height: 30px;
 }
