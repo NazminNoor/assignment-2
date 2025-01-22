@@ -37,6 +37,13 @@
     grid-template-columns: 1fr;
   }
 
+  .our-stories .card-large {
+    display: none;
+  }
+  .our-stories .small {
+    display: block;
+  }
+
   .our-stories .card-small-container {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -57,7 +64,16 @@
 
   /* footer section  */
   .footer-container {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
+    gap: 32px 0;
+  }
+  .footer-item.footer-item2 {
+    align-items: normal;
+  }
+  .footer-item.footer-item2 h3 {
+    margin-left: 0;
+  }
+  .footer-item1 p {
+    width: 357px;
+  }
 }
-}
-
